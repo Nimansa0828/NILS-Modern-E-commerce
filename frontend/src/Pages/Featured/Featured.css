@@ -1,0 +1,137 @@
+.Featured {
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+/* Banner Wrapper */
+.Featured-banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Banner Image */
+.Featured-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlaid Banner Text */
+.Featured-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Section Title */
+.Featured h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* Product Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 30px 20px;
+}
+
+/* Load More Button */
+.featured-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.featured-loadmore:hover {
+  background: #d6d6d6;
+}
+
+/* ---------------------------------- */
+/*          RESPONSIVE MEDIA          */
+/* ---------------------------------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .Featured-text {
+    font-size: 2.5rem;
+  }
+
+  .product-list {
+    padding: 25px 16px;
+    gap: 20px;
+  }
+}
+
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+  .Featured-banner-wrapper {
+    height: 220px;
+  }
+
+  .Featured-text {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    padding: 20px 12px;
+  }
+
+  .featured-loadmore {
+    width: 180px;
+    height: 55px;
+    font-size: 15px;
+  }
+}
+
+/* Extra Small Devices (≤480px) */
+@media (max-width: 480px) {
+  .Featured-banner-wrapper {
+    height: 180px;
+  }
+
+  .Featured-text {
+    font-size: 1.6rem;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 14px;
+    padding: 15px 10px;
+  }
+
+  .featured-loadmore {
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
+  }
+}

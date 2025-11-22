@@ -1,0 +1,53 @@
+/* SearchResults.css */
+
+.search-results {
+    padding: 40px 5%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfcfd;
+    color: #333;
+  }
+  
+  .search-results h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: grey;
+    font-weight: 600;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 0.2fr));
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 12px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .product-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+  }
+  

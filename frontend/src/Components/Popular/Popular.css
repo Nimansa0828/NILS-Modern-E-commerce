@@ -1,0 +1,127 @@
+.Popular {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+}
+
+.Popular h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Popular hr {
+  width: 80px;
+  height: 4px;
+  background-color: #ff4081;
+  border: none;
+  margin: 0 auto 30px;
+  border-radius: 2px;
+}
+
+.popular-item-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.popular-item {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.popular-item::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.arrow-button:hover {
+  background: #ffe5ec;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+/* 🔽 Responsive Adjustments */
+
+@media (max-width: 1024px) {
+  .Popular h1 {
+    font-size: 1.8rem;
+  }
+
+  .popular-item {
+    gap: 15px;
+    padding: 10px 5px;
+  }
+
+  .arrow-button {
+    font-size: 22px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Popular h1 {
+    font-size: 1.6rem;
+  }
+
+  .popular-item {
+    gap: 10px;
+  }
+
+  .arrow-button {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .arrow-left {
+    left: 5px;
+  }
+
+  .arrow-right {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Popular {
+    padding: 30px 10px;
+  }
+
+  .Popular h1 {
+    font-size: 1.4rem;
+  }
+
+  .Popular hr {
+    width: 60px;
+    height: 3px;
+  }
+
+  .arrow-button {
+    font-size: 18px;
+    padding: 5px;
+  }
+}

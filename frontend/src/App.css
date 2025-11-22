@@ -1,0 +1,83 @@
+/* App.css */
+
+/* Global reset and box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set global font for entire app */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff; /* Optional, set your default background */
+  color: #333; /* Default text color */
+  line-height: 1.5;
+}
+
+/* Remove default list styles globally */
+ul, ol {
+  list-style: none;
+}
+
+/* Anchor tag default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image default styling */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Headings - keep as is or style specifically in components */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Buttons and inputs - DO NOT set global colors or backgrounds here */
+/* Style buttons and inputs ONLY in component CSS files */
+
+/* Scrollbar removal for webkit browsers (optional) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: remove scrollbar */
+}
+
+/* You can add app-wide utility classes here if needed */
+
+/* Example: Center content utility */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #ff4141;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .scroll-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

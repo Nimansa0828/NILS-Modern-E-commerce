@@ -1,0 +1,163 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #A16B8C;
+  height: auto;
+  padding: 20px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 0;
+  gap: 200px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-links-section {
+  list-style: none;
+  min-width: 180px;
+  flex: 1;
+}
+
+.footer-links-section h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-links-section hr {
+  width: 80px;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.footer-links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-section li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.footer-links-section li:hover {
+  text-decoration: underline;
+}
+
+.footer-socials-icon {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-socials-icon img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.footer-icons-container {
+  padding: 8px;
+  padding-bottom: 3px;
+  border: 1px solid #A16B8C;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+.footer-copyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 2px;
+  background: #c7c7c7;
+}
+
+/* 🔽 Responsive Styles */
+@media (max-width: 1024px) {
+  .footer-sections {
+    gap: 100px;
+    padding: 30px 20px;
+  }
+
+  .footer-links-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-socials-icon img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-links-section {
+    text-align: center;
+  }
+
+  .footer-links-section h3 {
+    font-size: 15px;
+  }
+
+  .footer-links-section li {
+    font-size: 14px;
+  }
+
+  .footer-socials-icon img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-sections {
+    padding: 20px 10px;
+    gap: 30px;
+  }
+
+  .footer-links-section h3 {
+    font-size: 14px;
+  }
+
+  .footer-links-section li {
+    font-size: 13px;
+  }
+
+  .footer-socials-icon {
+    gap: 10px;
+  }
+
+  .footer-socials-icon img {
+    width: 30px;
+  }
+
+  .footer-icons-container {
+    padding: 6px;
+  }
+
+  .footer-copyright {
+    font-size: 13px;
+  }
+}

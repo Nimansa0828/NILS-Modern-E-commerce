@@ -1,0 +1,146 @@
+/* General layout */
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Form container */
+.loginsignup-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Header */
+.loginsignup-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.loginsignup-fields input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+/* Continue button */
+.loginsignup-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4141;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.loginsignup-container button:hover {
+  background-color: #e63939;
+}
+
+/* Toggle link */
+.loginsignup-login {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.loginsignup-login span {
+  color: #A16B8C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Checkbox row */
+.loginsignup-agree {
+  display: flex;
+  align-items: start;
+  font-size: 13px;
+  margin-top: 15px;
+  gap: 10px;
+  color: #777;
+}
+
+/* Form toggle buttons */
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.form-toggle button {
+  flex: 1;
+  background-color: #f1f1f1;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-toggle button.active,
+.form-toggle button:hover {
+  background-color: #F5EAEA;
+  color: black;
+  border-color: #A16B8C;
+}
+
+  
+  
+  
+  /* ✅ Media Query for max-width: 500px */
+  @media (max-width: 500px) {
+    .loginsignup-container {
+      width: 90%;
+      padding: 30px 20px;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 26px;
+    }
+  
+    .loginsignup-fields input {
+      font-size: 16px;
+      height: 45px;
+      width: 90%;
+    }
+  
+    .loginsignup-container button {
+      font-size: 18px;
+      height: 45px;
+      width:95%;
+    }
+  
+    .loginsignup-login,
+    .loginsignup-agree {
+      font-size: 16px;
+    }
+  
+    .loginsignup-agree {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
